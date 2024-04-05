@@ -1,0 +1,33 @@
+.portfolio {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 94px 0;
+    text-align: center;
+
+
+    .portfolio-boxes {
+        max-width: 1320px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .p-box {
+            width: 33,33333%;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+
+
+
+            img {
+                width: 100%;
+                // background-color: red;
+            }
+
+
+        }
+    }
+
+}
