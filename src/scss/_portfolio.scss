@@ -18,15 +18,64 @@
             background-color: white;
             position: relative;
             overflow: hidden;
+            
+            .p-hover{
+                position: relative;
+                overflow: hidden;
 
+
+                .photo{
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+
+                    .fa-plus{
+                        font-size: 50px;
+                        color: white;
+                        position: absolute;
+                        left: 45%;
+                        top: 45%;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                }
+
+                .photo:hover{
+                    opacity: 0.6;
+
+                    &::before{
+                        opacity: 1;
+                    }
+                    .fa-plus{
+                        opacity: 1;
+                    }
+                    img{
+                        // opacity: 0.2;
+                    }
+                   
+                }
+
+            }
 
 
             img {
                 width: 100%;
                 // background-color: red;
+                height: 100%;
+                opacity: 1;
             }
 
-
+         .photo::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ffc800e6;
+            opacity:0 ;
+            transition: 0.5s;
+            
+            
+         }
         }
     }
 
